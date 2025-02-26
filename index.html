@@ -1,77 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jampana Nagi Reddy | Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
 
-    <header>
-        <h1 class="glow">JAMPANA NAGI REDDY</h1>
-        <h2>Aspiring Data Analyst / Data Scientist</h2>
-    </header>
+/* Header */
+header {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 40px 10px;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>To advance my career by leveraging theoretical expertise, technical proficiency, and innovative thinking in a dynamic setting, driving cutting-edge software solutions and technological progress.</p>
-    </section>
+/* Navigation */
+nav {
+    background: #345e4a;
+    padding: 10px;
+    text-align: center;
+}
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, C++, C</li>
-            <li>Power BI, MySQL, Machine Learning</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>NumPy, Pandas, Matplotlib, Seaborn</li>
-        </ul>
-    </section>
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>📊 Zomato Order Analysis and Customer Churn Analysis using Power BI</li>
-            <li>🎨 Image Processing for Color Segregation and Channel Separation</li>
-            <li>🤖 Restaurant Orders Analysis in Data Science using ML</li>
-            <li>🌐 JNS PG Hostel Website (HTML, CSS, JavaScript) - Launching Soon</li>
-        </ul>
-    </section>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-    <section id="achievements">
-        <h2>Achievements & Certificates</h2>
-        <ul>
-            <li>Python Certification - LabView Academy & HP Life</li>
-            <li>Data Science Basics (LinkedIn)</li>
-            <li>Intro to AI & Machine Learning (Kaggle, LinkedIn)</li>
-            <li>Cyber Security & Geo-Data Sharing (ISRO)</li>
-            <li>Cloud Computing (NPTEL)</li>
-        </ul>
-    </section>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>📞 +91-9347189668</p>
-        <p>📧 <a href="mailto:nagireddyj671@gmail.com">nagireddyj671@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/jampana-nagi-reddy-751baa239" target="_blank">LinkedIn</a></p>
-        <p>💻 <a href="https://github.com/nagi-672" target="_blank">GitHub</a></p>
-        <p>📍 Kadapa, Andhra Pradesh, 516203</p>
-    </section>
+nav ul li a:hover {
+    color: #1abc9c;
+}
 
-    <footer>
-        <p>&copy; 2025 Jampana Nagi Reddy | All Rights Reserved</p>
-    </footer>
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    padding: 10px;
+}
 
-    <script src="portfolio.js"></script>
-</body>
-</html>
+/* About Me */
+#about {
+    background: #ffb400;
+    color: white;
+}
+
+/* Skills */
+#skills {
+    background: #8e44ad;
+    color: white;
+}
+
+.skill-box {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.skill-box h3 {
+    color: #ffffff;
+}
+
+/* Projects */
+#projects {
+    background: #2980b9;
+    color: white;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    padding: 15px;
+    width: 60%;
+    border-left: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Experience */
+#experience {
+    background: #e7b73c;
+    color: white;
+}
+
+/* Contact */
+#contact {
+    background: #16a085;
+    color: white;
+}
+
+#contact a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill-box, .project {
+        width: 80%;
+    }
+}
